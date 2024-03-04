@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class App {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Gifu gifu = new Gifu(); 
@@ -8,8 +9,7 @@ public class App {
 
         while (!quit) {
             System.out.println("Tervetuloa Gifu-järjestelmään\nMille yliopistolle haluat ottaa järjestelmän käyttöön?");
-            String university = scanner.nextLine(); 
-
+            String university = scanner.nextLine();
             System.out.println("1) Luo uusi kurssi, 2) Luo uusi opiskelija, 3) Listaa kurssit, 4) Listaa opiskelijat, 5) Lisää opiskelija kurssille, 6) Anna kurssiarvosanat, 7) Listaa kurssilla olevat opiskelijat, 8) Listaa opiskelijan arvosanat, 9) Listaa kaikkien kurssien kaikkien opiskelijoiden arvosanat, 0) Lopeta ohjelma");
             int choice = scanner.nextInt();
             scanner.nextLine();
